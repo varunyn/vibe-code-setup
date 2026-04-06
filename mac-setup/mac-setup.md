@@ -258,6 +258,25 @@ Install these if they are not already available on your machine.
 
 ---
 
+## Task 10: Optional - Install and Set Up Codex
+
+1. Open the [Codex download page](https://openai.com/codex/) in your browser and select **Download for macOS**.
+   ![Codex download page with the Download for macOS button highlighted](./images/download-codex-for-macos.png)
+
+2. Open the downloaded installer and drag **Codex** into the **Applications** folder.
+   ![Codex installer DMG window showing the Codex app being dragged into the Applications folder](./images/install-codex-dmg-to-applications.png)
+
+3. Open the Oracle Code Assist API key page and copy the Codex environment setup command or API key details needed for your local setup.
+   ![Oracle Code Assist API key page showing the Copy Codex Environment Setup Command button](./images/oracle-code-assist-codex-api-key-page.png)
+
+4. In Terminal, run the Codex setup or login flow and complete authentication with your Oracle Code Assist API key.
+   ![Terminal showing a successful Codex CLI login after reading the API key from standard input](./images/codex-cli-login-success-terminal.png)
+
+5. Launch Codex and verify that it opens successfully and responds to a prompt.
+   ![Codex macOS app open and responding successfully after setup](./images/codex-app-ready-after-setup.png)
+
+---
+
 ## Validation Checklist
 
 Before moving on, confirm that:
@@ -271,6 +290,7 @@ Before moving on, confirm that:
 - Instant Client is available if required by your tooling
 - OCI CLI is installed and responds in Terminal
 - Optional Python and Node.js installations are available if needed
+- Optional Codex installation opens and responds correctly if you chose to install it
 
 ---
 
