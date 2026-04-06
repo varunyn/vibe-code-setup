@@ -47,6 +47,8 @@ Git is required for cloning repositories, working with branches, and authenticat
    git --version
    ```
 
+   ![Terminal showing the installed Git version on macOS](./images/git-version-check-terminal.png)
+
 2. If Git is not installed, install it using one of these options:
    - Install Xcode Command Line Tools:
      ```bash
@@ -72,9 +74,8 @@ Git is required for cloning repositories, working with branches, and authenticat
 3. Drag **Visual Studio Code.app** into the **Applications** folder.
    ![Dragging Visual Studio Code into the Applications folder](./images/drag-vscode-to-applications.png)
 4. Launch VS Code from **Applications**.
+   ![Launching Visual Studio Code from the Applications folder on macOS](./images/launch-vscode-from-applications.png)
 5. Optionally keep VS Code in your Dock for quick access.
-
-<!-- Add image: VS Code installed in Applications folder -->
 
 ---
 
@@ -102,7 +103,22 @@ This sign-in is useful for source control workflows and for tools that integrate
 
 ---
 
-## Task 5: Install Cline, Configure Oracle Code Assist and SQLcl MCP
+## Task 5: Request Oracle Code Assist Access in OIM
+
+1. Sign in to [Oracle Identity Manager (OIM)](https://oim.oraclecorp.com/identity/faces/home).
+2. Select **Request Access**, then choose **Request for Self**.
+   ![Oracle Identity Manager request access page with the Request for Self option](./images/oim-request-access-request-for-self.png)
+3. Open **Catalog** and search for the correct entitlement string listed in Section 3. Use the exact entitlement name from that section, or the request will not be approved.
+   ![Oracle Identity Manager catalog search showing the entitlement lookup field](./images/oim-catalog-entitlement-search.png)
+4. Select **Add to Cart**.
+5. Select **Next**.
+6. Enter your justification, select **Update**, and then select **Submit**.
+7. Wait for manager approval.
+8. After approval, allow about 15 minutes for the entitlement to become active.
+
+---
+
+## Task 6: Install Cline, Configure Oracle Code Assist and SQLcl MCP
 
 1. Follow this [link](https://marketplace.visualstudio.com/items?itemName=saoudrizwan.claude-dev) to install Cline from VSCode marketplace
    ![Installing the Cline extension from the Visual Studio Code marketplace](./images/install-cline-extension.png)
@@ -117,34 +133,41 @@ This sign-in is useful for source control workflows and for tools that integrate
 7. Restart VS Code if required.
 8. Verify that Cline can see and use the SQL Developer tooling.
 
-## Task 6: Install Oracle Instant Client
+---
+
+## Task 7: Install Oracle Instant Client
 
 Oracle Instant Client is required for tools and extensions that depend on Oracle client libraries.
 
-1. Download the appropriate Oracle Instant Client package for macOS from Oracle's download site. [Link](https://www.oracle.com/database/technologies/instant-client/downloads.html)
+1. Download the desired Oracle Instant Client packages for macOS from Oracle's download site. [Link](https://www.oracle.com/database/technologies/instant-client/downloads.html)
    ![Downloading Oracle Instant Client from the Oracle download page](./images/download-oracle-instant-client.png)
 
-2. Download the basic dmg file by clicking on it.
+2. Download the DMG package you need, such as the basic package.
    ![Clicking the basic DMG download for Oracle Instant Client](./images/click-basic-dmg-download.png)
 
-3. Expand the Installation instruction section and follow the steps on how to install.
+3. Expand the installation instructions section so you can review the package-specific steps.
    ![Expanding the Oracle Instant Client installation instructions](./images/expand-installation-instructions.png)
 
-4. Restart your terminal session after updating your profile.
+4. Mount each DMG package you want to install.
 
----
+   ```bash
+   hdiutil mount instantclient-basic-macos.arm64-23.3.0.23.09.dmg
+   ```
 
-## Task 7: Request Oracle Code Assist Access in OIM
+   ![Terminal showing the Oracle Instant Client DMG mounted successfully and the volume path under /Volumes](./images/instant-client-dmg-mounted-terminal.png)
 
-1. Open your organization's OIM access request portal.
-2. Search for the Oracle Code Assist entitlement or access package.
-3. Submit the access request.
-4. Wait for approval before testing production use.
-5. After approval, return to VS Code and complete sign-in if needed.
+5. Change into the mounted volume and run the installer script to copy the files into your install location.
 
-Document any internal approval notes or request names here if your team uses a specific package name.
+   ```bash
+   cd /Volumes/instantclient-basic-macos.arm64-23.3.0.23.09
+   sh ./install_ic.sh
+   ```
 
-<!-- Add image: OIM access request submitted -->
+   ![Terminal showing install_ic.sh copying Oracle Instant Client files into the instantclient_23_3 installation directory](./images/instant-client-install-script-copying-files-terminal.png)
+
+   Replace the example volume name with the package version you downloaded. By default, the installer copies the files into a folder such as `/Users/<your-user-name>/Downloads/instantclient_23_3`.
+
+6. Restart your terminal session after updating your profile.
 
 ---
 
@@ -165,11 +188,15 @@ Document any internal approval notes or request names here if your team uses a s
    oci --version
    ```
 
+   ![Terminal showing the installed OCI CLI version](./images/oci-cli-version-check-terminal.png)
+
 4. If needed, run the OCI CLI setup command:
 
    ```bash
    oci setup config
    ```
+
+   ![Terminal showing the OCI CLI setup config command](./images/oci-cli-setup-config-terminal.png)
 
 5. Complete the profile configuration using your OCI tenancy details.
 
@@ -181,14 +208,30 @@ Install these if they are not already available on your machine.
 
 ### Python
 
-1. Check your Python version:
+1. Check whether Python 3 is already installed:
 
    ```bash
    python3 --version
    ```
 
-2. If needed, install a current Python 3 release using your preferred package manager or installer.
-3. Confirm that `python3` and `pip3` are available.
+2. If Python 3 is not installed, install it with [Homebrew](https://brew.sh/):
+
+   ```bash
+   brew install python
+   ```
+
+3. Verify the installation:
+
+   ```bash
+   python3 --version
+   pip3 --version
+   ```
+
+4. If needed, upgrade to the latest Homebrew-managed version:
+
+   ```bash
+   brew upgrade python
+   ```
 
 ### Node.js
 
