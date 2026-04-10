@@ -1,5 +1,5 @@
 {
-  "workshoptitle": "Cloud Vibe Code Developer Setup on macOS",
+  "workshoptitle": "Cloud Vibe Code Developer Setup on macOS and Windows",
   "help": "livelabs-help-adbs_us@oracle.com",
   "tutorials": [
     {
@@ -16,6 +16,11 @@
       "title": "Step 1: Local Machine Install and Setup for Cloud Vibe Code Development on macOS",
       "description": "Prepare your Mac with the required local tools and IDE setup.",
       "filename": "../../mac-setup/mac-setup.md"
+    },
+    {
+      "title": "Step 1: Local Machine Install and Setup for Cloud Vibe Code Development on Windows",
+      "description": "Prepare your Windows machine with the required local tools and IDE setup.",
+      "filename": "../../windows-setup/windows-setup.md"
     },
     {
       "title": "Need Help?",
