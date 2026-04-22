@@ -112,19 +112,21 @@ Git is required for cloning repositories, working with branches, and authenticat
 ## Task 3: Sign in to GitHub from VS Code
 
 1. Open VS Code.
-2. Click the **Sign in** icon at the top of the app. When the sign-in popup opens, click **Continue with GitHub**.
+2. Click the **Accounts** icon on the left side of VS Code, and then click **Sign In**.
 
-   ![VS Code sign-in dialog showing the Continue with GitHub option](./images/vscode-sign-in-dialog.png)
+   ![Clicking the VS Code Accounts icon and selecting Sign In](./images/vscode-accounts-sign-in-icon.png)
 
-3. In the browser window that opens, complete the GitHub sign-in and authorization flow.
+3. Select **Sign in with GitHub**.
 
    ![Choosing Sign In and selecting Sign in with GitHub](./images/sign-in-with-github.png)
 
-4. Return to VS Code and click **Open** or **Continue** if VS Code prompts you to complete the sign-in.
+4. In the browser window that opens, complete the GitHub sign-in and authorization flow.
 
    ![Completing the browser-based GitHub sign-in flow](./images/browser-github-sign-in.png)
 
-5. Confirm that your GitHub account is connected in the **Accounts** menu.
+5. Return to VS Code and click **Open** or **Continue** if VS Code prompts you to complete the sign-in.
+
+6. Confirm that your GitHub account is connected in the **Accounts** menu.
 
 This sign-in is useful for source control workflows and for tools that integrate with GitHub from inside the IDE.
 

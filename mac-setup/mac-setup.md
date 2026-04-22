@@ -40,7 +40,7 @@ Before you begin, make sure you have:
 
 ## Task 1: Install Homebrew
 
-Homebrew is the package manager used later in this guide to install Java, the OCI CLI, and optional developer tooling.
+Homebrew is the package manager used later in this guide to install the OCI CLI and optional developer tooling.
 
 1. Check whether Homebrew is already installed by opening Terminal and running:
 
@@ -106,14 +106,13 @@ Git is required for cloning repositories, working with branches, and authenticat
 ## Task 4: Sign in to GitHub from VS Code
 
 1. Open VS Code.
-2. Select the **Accounts** icon in the lower-left or upper-right area of the interface, depending on your layout.
-   ![Selecting the Accounts icon in Visual Studio Code](./images/vs-code-accounts-icon.png)
-3. Choose **Sign In**.
-4. Select **Sign in with GitHub**.
+2. Click the **Accounts** icon on the left side of VS Code, and then click **Sign In**.
+   ![Clicking the VS Code Accounts icon and selecting Sign In](./images/vscode-accounts-sign-in-icon.png)
+3. Select **Sign in with GitHub**.
    ![Choosing Sign In and selecting Sign in with GitHub](./images/sign-in-with-github.png)
-5. Complete the browser-based sign-in flow.
+4. Complete the browser-based sign-in flow.
    ![Completing the browser-based GitHub sign-in flow](./images/browser-github-sign-in.png)
-6. Return to VS Code and confirm your GitHub account is connected.
+5. Return to VS Code and confirm your GitHub account is connected.
 
 This sign-in is useful for source control workflows and for tools that integrate with GitHub from inside the IDE.
 
@@ -142,44 +141,24 @@ This sign-in is useful for source control workflows and for tools that integrate
 
 ---
 
-## Task 7: Install Java, Cline, Configure Oracle Code Assist, and SQLMCP
+## Task 7: Install Cline, Configure Oracle Code Assist, and SQLMCP
 
-1. Install Java first, because SQLMCP requires a local Java runtime.
-
-   Check whether Java is already installed:
-
-   ```bash
-   java -version
-   ```
-
-2. If Java is not installed, install it with [Homebrew](https://brew.sh/):
-
-   ```bash
-   brew install openjdk
-   ```
-
-3. If Homebrew prints follow-up instructions to add Java to your shell profile, run those commands, then restart Terminal and verify the installation:
-
-   ```bash
-   java -version
-   ```
-
-4. Follow this [link](https://marketplace.visualstudio.com/items?itemName=saoudrizwan.claude-dev) to install Cline from the VS Code Marketplace.
+1. Follow this [link](https://marketplace.visualstudio.com/items?itemName=saoudrizwan.claude-dev) to install Cline from the VS Code Marketplace.
    ![Installing the Cline extension from the Visual Studio Code marketplace](./images/install-cline-extension.png)
-5. Open the **Cline** panel in VS Code. Click **Settings**, choose **Oracle Code Assist** as the API provider, select **I'm an Oracle Employee**, and then click **Sign in with Oracle Code Assist**.
+2. Open the **Cline** panel in VS Code. Click **Settings**, choose **Oracle Code Assist** as the API provider, select **I'm an Oracle Employee**, and then click **Sign in with Oracle Code Assist**.
    ![Configuring Oracle Code Assist in the Cline panel](./images/configure-oracle-code-assist.png)
-6. Once signed in, choose the LLM model you want to use.
+3. Once signed in, choose the LLM model you want to use.
    ![Selecting the LLM model after Oracle Code Assist sign-in](./images/choose-llm-model.png)
-7. Press **Command+Shift+P** in VS Code to open the Command Palette.
+4. Press **Command+Shift+P** in VS Code to open the Command Palette.
    ![Opening the Command Palette and searching for Configure Cline SQLcl MCP](./images/cline-command-palette-configure-sqlcl-mcp.png)
-8. Search for **Configure Cline SQLcl MCP** and open it.
-9. Open the Cline MCP configuration area.
+5. Search for **Configure Cline SQLcl MCP** and open it.
+6. Open the Cline MCP configuration area.
    ![Opening the Cline MCP configuration area](./images/cline-mcp-configuration.png)
-10. Review or enable the SQLcl - SQL Developer MCP configuration so that Cline can work with the SQL Developer extension.
-    ![Cline MCP settings showing the SQLcl - SQL Developer configuration](./images/cline-sqlcl-mcp-settings.png)
-11. Save the configuration.
-12. Restart VS Code if required.
-13. Verify that Cline can see and use the SQL Developer tooling.
+7. Review or enable the SQLcl - SQL Developer MCP configuration so that Cline can work with the SQL Developer extension.
+   ![Cline MCP settings showing the SQLcl - SQL Developer configuration](./images/cline-sqlcl-mcp-settings.png)
+8. Save the configuration.
+9. Restart VS Code if required.
+10. Verify that Cline can see and use the SQL Developer tooling.
 
 ---
 
@@ -332,7 +311,6 @@ Before moving on, confirm that:
 - VS Code opens correctly
 - GitHub is connected in VS Code
 - SQL Developer extension is installed
-- Java is installed and available in Terminal if you plan to use SQLMCP
 - Cline is installed and opens correctly
 - Oracle Code Assist is installed
 - Instant Client is available if required by your tooling
