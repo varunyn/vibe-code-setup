@@ -14,6 +14,7 @@ In this step, you will:
 
 - Install Git
 - Install Visual Studio Code
+- Install Podman
 - Configure the SQL Developer extension in VS Code
 - Configure SQLMCP in Cline for the SQL Developer extension
 - Sign in to GitHub from VS Code
@@ -90,7 +91,59 @@ Git is required for cloning repositories, working with branches, and authenticat
 
 ---
 
-## Task 3: Install Visual Studio Code
+## Task 3: Install Podman
+
+Podman provides a container CLI for running local containers on macOS. On Mac, Podman uses a lightweight virtual machine managed with `podman machine`.
+
+1. Check whether Podman is already installed by opening Terminal and running:
+
+   ```bash
+   podman --version
+   ```
+
+   ![Terminal showing the installed Podman version on macOS](./images/podman-version-check-terminal.png)
+
+2. If Podman is not installed, install it with Homebrew:
+
+   ```bash
+   brew install podman
+   ```
+
+   ![Terminal showing the initial portion of the Homebrew Podman installation output on macOS](./images/install-podman-brew-terminal.png)
+
+3. Initialize the Podman machine:
+
+   ```bash
+   podman machine init
+   ```
+
+   ![Terminal showing podman machine init creating the local Podman machine on macOS](./images/podman-machine-init-terminal.png)
+
+4. Start the Podman machine:
+
+   ```bash
+   podman machine start
+   ```
+
+   ![Terminal showing podman machine start starting the local Podman machine on macOS](./images/podman-machine-start-terminal.png)
+
+5. Verify that Podman is installed and the local machine is ready:
+
+   ```bash
+   podman info
+   ```
+
+   ![Terminal showing podman info confirming the local Podman machine is running on macOS](./images/podman-info-terminal.png)
+
+6. Optionally stop the Podman machine when you are done using it:
+
+   ```bash
+   podman machine stop
+   ```
+
+---
+
+## Task 4: Install Visual Studio Code
 
 1. Download Visual Studio Code for macOS from [code.visualstudio.com](https://code.visualstudio.com/download).
 2. Open the downloaded `.dmg` file.
@@ -103,7 +156,7 @@ Git is required for cloning repositories, working with branches, and authenticat
 
 ---
 
-## Task 4: Sign in to GitHub from VS Code
+## Task 5: Sign in to GitHub from VS Code
 
 1. Open VS Code.
 2. Click the **Accounts** icon on the left side of VS Code, and then click **Sign In**.
@@ -118,7 +171,7 @@ This sign-in is useful for source control workflows and for tools that integrate
 
 ---
 
-## Task 5: Install the SQL Developer extension in VS Code
+## Task 6: Install the SQL Developer extension in VS Code
 
 1. Click this [link](https://www.oracle.com/database/sqldeveloper/vscode/), then click **Open in VS Code**.
    ![SQL Developer webpage. Click Open in VS Code.](./images/install-sql-developer-vscode.png)
@@ -126,7 +179,7 @@ This sign-in is useful for source control workflows and for tools that integrate
 
 ---
 
-## Task 6: Request Oracle Code Assist Access in OIM
+## Task 7: Request Oracle Code Assist Access in OIM
 
 1. Sign in to [Oracle Identity Manager (OIM)](https://oim.oraclecorp.com/identity/faces/home). _VPN is required to open this link._
 2. Select **Request Access**, then choose **Request for Self**.
@@ -141,7 +194,7 @@ This sign-in is useful for source control workflows and for tools that integrate
 
 ---
 
-## Task 7: Install Cline, Configure Oracle Code Assist, and SQLMCP
+## Task 8: Install Cline, Configure Oracle Code Assist, and SQLMCP
 
 1. Follow this [link](https://marketplace.visualstudio.com/items?itemName=saoudrizwan.claude-dev) to install Cline from the VS Code Marketplace.
    ![Installing the Cline extension from the Visual Studio Code marketplace](./images/install-cline-extension.png)
@@ -162,7 +215,7 @@ This sign-in is useful for source control workflows and for tools that integrate
 
 ---
 
-## Task 8: Install Oracle Instant Client
+## Task 9: Install Oracle Instant Client
 
 Oracle Instant Client is required for tools and extensions that depend on Oracle client libraries.
 
@@ -198,7 +251,7 @@ Oracle Instant Client is required for tools and extensions that depend on Oracle
 
 ---
 
-## Task 9: Install OCI CLI
+## Task 10: Install OCI CLI
 
 1. Open Terminal.
 2. Install the OCI CLI using [Homebrew](https://brew.sh/). Check the [documentation](https://docs.oracle.com/en-us/iaas/private-cloud-appliance/pca/installing-the-oci-cli.htm) for more information.
@@ -229,7 +282,7 @@ Oracle Instant Client is required for tools and extensions that depend on Oracle
 
 ---
 
-## Task 10: Optional - Install Core Programming Languages
+## Task 11: Optional - Install Core Programming Languages
 
 Install these if they are not already available on your machine.
 
@@ -283,7 +336,7 @@ Install these if they are not already available on your machine.
 
 ---
 
-## Task 11: Optional - Install and Set Up Codex
+## Task 12: Optional - Install and Set Up Codex
 
 1. Open the [Codex download page](https://openai.com/codex/) in your browser and select **Download for macOS**.
    ![Codex download page with the Download for macOS button highlighted](./images/download-codex-for-macos.png)
@@ -309,6 +362,7 @@ Before moving on, confirm that:
 - Git runs from Terminal
 - Homebrew runs from Terminal
 - VS Code opens correctly
+- Podman is installed and `podman info` runs successfully
 - GitHub is connected in VS Code
 - SQL Developer extension is installed
 - Cline is installed and opens correctly
