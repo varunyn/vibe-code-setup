@@ -182,15 +182,17 @@ This sign-in is useful for source control workflows and for tools that integrate
 ## Task 7: Request Oracle Code Assist Access in OIM
 
 1. Sign in to [Oracle Identity Manager (OIM)](https://oim.oraclecorp.com/identity/faces/home). _VPN is required to open this link._
-2. Select **Request Access**, then choose **Request for Self**.
+2. Open **My Access** and check whether Oracle Code Assist access is already assigned to you.
+   ![Oracle Identity Manager My Access entitlements page showing Oracle Code Assist access already assigned](./images/oim-my-access-entitlements.png)
+3. If you do not already have access, select **Request Access**, then choose **Request for Self**.
    ![Oracle Identity Manager request access page with the Request for Self option](./images/oim-request-access-request-for-self.png)
-3. Open **Catalog** and search for the correct entitlement. If you do not see it, check whether it has already been assigned.
-   ![Oracle Identity Manager catalog search showing the entitlement lookup field](./images/oim-catalog-entitlement-search.png)
-4. Select **Add to Cart**.
-5. Select **Next**.
-6. Enter your justification, select **Update**, and then select **Submit**.
-7. Wait for manager approval.
-8. After approval, allow about 15 minutes for the entitlement to become active.
+4. Open **Catalog** and do a partial search for **oracle code assist**.
+   ![Oracle Identity Manager catalog search results showing Oracle Code Assist access items](./images/oim-catalog-search-results-oracle-code-assist.png)
+5. In the search results, click **Add to Cart** for the highlighted Oracle Code Assist access items: **API Key Access**, **Meta Models Access**, **OpenAI Models Access**, and **OpenAI GPT 4.1 Access**.
+6. Select **Next**.
+7. Enter your justification, select **Update**, and then select **Submit**.
+8. Wait for manager approval.
+9. After approval, allow about 15 minutes for the entitlement to become active.
 
 ---
 
