@@ -346,13 +346,19 @@ Install these if they are not already available on your machine.
 2. Open the downloaded installer and drag **Codex** into the **Applications** folder.
    ![Codex installer DMG window showing the Codex app being dragged into the Applications folder](./images/install-codex-dmg-to-applications.png)
 
-3. Open the [Oracle Code Assist API key page](https://apex.oraclecorp.com/pls/apex/r/oca/api-key/home) and copy the Codex environment setup command or API key details needed for your local setup.
+3. In Terminal, install the Codex CLI with Homebrew:
+
+   ```bash
+   brew install codex
+   ```
+
+4. Open the [Oracle Code Assist API key page](https://apex.oraclecorp.com/pls/apex/r/oca/api-key/home) and copy the Codex environment setup command or API key details needed for your local setup.
    ![Oracle Code Assist API key page showing the Copy Codex Environment Setup Command button](./images/oracle-code-assist-codex-api-key-page.png)
 
-4. In Terminal, run the Codex setup or login flow and complete authentication with your Oracle Code Assist API key.
+5. In Terminal, run the Codex setup or login flow and complete authentication with your Oracle Code Assist API key.
    ![Terminal showing a successful Codex CLI login after reading the API key from standard input](./images/codex-cli-login-success-terminal.png)
 
-5. Launch Codex and verify that it opens successfully and responds to a prompt.
+6. Launch Codex and verify that it opens successfully and responds to a prompt.
    ![Codex macOS app open and responding successfully after setup](./images/codex-app-ready-after-setup.png)
 
 ---
