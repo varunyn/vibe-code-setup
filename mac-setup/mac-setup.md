@@ -358,7 +358,44 @@ Install these if they are not already available on your machine.
 5. In Terminal, run the Codex setup or login flow and complete authentication with your Oracle Code Assist API key.
    ![Terminal showing a successful Codex CLI login after reading the API key from standard input](./images/codex-cli-login-success-terminal.png)
 
-6. Launch Codex and verify that it opens successfully and responds to a prompt.
+6. In Codex, open **Settings**, select **Configuration**, and click **Open config.toml**.
+   ![Codex settings on macOS showing the Configuration page and the Open config.toml button](./images/codex-open-config-settings.png)
+
+7. Add or update the following settings in `~/.codex/config.toml`:
+
+   ```toml
+   approval_policy = "on-failure"
+   preferred_auth_method = "apikey"
+   model_provider = "oca"
+   profile = "gpt-5-3-codex"
+   sandbox_mode = "danger-full-access"
+   web_search = "live"
+   trust_level = "trusted"
+   personality = "pragmatic"
+
+   [model_providers.oca]
+   base_url = "https://code-internal.aiservice.us-chicago-1.oci.oraclecloud.com/20250206/app/litellm"
+   http_headers = { "client" = "codex-cli", "client-version" = "0" }
+   model = "oca/gpt5"
+   name = "Oracle Code Assist"
+   wire_api = "responses"
+
+   [profiles.gpt-5-5]
+   model = "oca/gpt-5.5"
+   model_provider = "oca"
+   review_model = "oca/gpt-5.5"
+
+   [profiles.gpt-5-3-codex]
+   model = "gpt-5.5"
+   model_provider = "oca"
+   review_model = "oca/gpt-5.3-codex"
+   personality = "pragmatic"
+   model_reasoning_effort = "medium"
+   ```
+
+   ![Codex config.toml open on macOS with Oracle Code Assist settings added](./images/codex-config-toml-oracle-code-assist-settings.png)
+
+8. Save the file, restart Codex if needed, and verify that it opens successfully and responds to a prompt.
    ![Codex macOS app open and responding successfully after setup](./images/codex-app-ready-after-setup.png)
 
 ---

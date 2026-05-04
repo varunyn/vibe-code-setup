@@ -412,9 +412,48 @@ Install these if they are not already available on your machine.
 
 1. Open the [Codex download page](https://openai.com/codex/) in your browser and click the Windows download option if available.
 2. Open the downloaded installer and follow the setup wizard.
-3. Open the Oracle Code Assist API key page and click the copy button for the Codex environment setup command or API key details needed for your local setup.
-4. In **PowerShell** or another terminal, paste the copied command or credentials, run the Codex setup or login flow, and complete authentication with your Oracle Code Assist API key.
-5. Launch Codex and verify that it opens successfully and responds to a prompt.
+3. In **PowerShell** or another terminal, install the Codex CLI using the Codex installation instructions for Windows.
+4. Open the [Oracle Code Assist API key page](https://apex.oraclecorp.com/pls/apex/r/oca/api-key/home) and click the copy button for the Codex environment setup command or API key details needed for your local setup.
+   ![Oracle Code Assist API key page showing the Copy Codex Environment Setup Command button](../mac-setup/images/oracle-code-assist-codex-api-key-page.png)
+
+5. In **PowerShell** or another terminal, paste the copied command or credentials, run the Codex setup or login flow, and complete authentication with your Oracle Code Assist API key.
+6. In Codex, open **Settings**, select **Configuration**, and click **Open config.toml**.
+   ![Codex settings showing the Configuration page and the Open config.toml button](../mac-setup/images/codex-open-config-settings.png)
+
+7. Add or update the following settings in `config.toml`:
+
+   ```toml
+   approval_policy = "on-failure"
+   preferred_auth_method = "apikey"
+   model_provider = "oca"
+   profile = "gpt-5-3-codex"
+   sandbox_mode = "danger-full-access"
+   web_search = "live"
+   trust_level = "trusted"
+   personality = "pragmatic"
+
+   [model_providers.oca]
+   base_url = "https://code-internal.aiservice.us-chicago-1.oci.oraclecloud.com/20250206/app/litellm"
+   http_headers = { "client" = "codex-cli", "client-version" = "0" }
+   model = "oca/gpt5"
+   name = "Oracle Code Assist"
+   wire_api = "responses"
+
+   [profiles.gpt-5-5]
+   model = "oca/gpt-5.5"
+   model_provider = "oca"
+   review_model = "oca/gpt-5.5"
+
+   [profiles.gpt-5-3-codex]
+   model = "gpt-5.5"
+   model_provider = "oca"
+   review_model = "oca/gpt-5.3-codex"
+   personality = "pragmatic"
+   model_reasoning_effort = "medium"
+   ```
+
+8. Save the file, restart Codex if needed, and verify that it opens successfully and responds to a prompt.
+   ![Codex app open and responding successfully after setup](../mac-setup/images/codex-app-ready-after-setup.png)
 
 ---
 
