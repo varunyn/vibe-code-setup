@@ -13,8 +13,8 @@ This step prepares your Windows machine for the rest of the workshop. You will i
 In this step, you will:
 
 - Install Git
-- Install Visual Studio Code
 - Install Podman
+- Install Visual Studio Code
 - Configure the SQL Developer extension in VS Code
 - Configure MCP in Cline for the SQL Developer extension
 - Sign in to GitHub from VS Code
@@ -80,37 +80,7 @@ Git is required for cloning repositories, working with branches, and authenticat
 
 ---
 
-## Task 2: Install Visual Studio Code
-
-1. Open [code.visualstudio.com](https://code.visualstudio.com/download) in your browser and click the Windows download for Visual Studio Code.
-
-   ![Visual Studio Code download page showing the Windows installer option](./images/vscode-install-download-page.png)
-
-2. Open the downloaded installer, select **I accept the agreement**, and then click **Next**.
-
-   ![Visual Studio Code installer showing the license agreement screen](./images/vscode-install-license-agreement.png)
-
-3. On the **Select Additional Tasks** screen, check the options you want, such as **Add to PATH** and Windows Explorer context menu entries, and then click **Next**.
-
-   ![Visual Studio Code installer showing the Select Additional Tasks screen](./images/vscode-install-select-additional-tasks.png)
-
-4. On the **Ready to Install** screen, click **Install**.
-
-   ![Visual Studio Code installer showing the Ready to Install screen](./images/vscode-install-ready-to-install.png)
-
-5. When the installation finishes, leave **Launch Visual Studio Code** checked and click **Finish**.
-
-   ![Visual Studio Code Setup Wizard completion screen with Launch Visual Studio Code selected](./images/vscode-install-completion-screen.png)
-
-6. If VS Code does not open automatically, click **Start**, type **Visual Studio Code**, and click the app.
-
-   ![Visual Studio Code first-launch welcome screen after installation](./images/vscode-first-launch-welcome-screen.png)
-
-7. Optionally right-click the Visual Studio Code icon on the taskbar and select **Pin to taskbar** for quick access.
-
----
-
-## Task 3: Install Podman
+## Task 2: Install Podman
 
 Podman provides local container tooling for workshop exercises that need containers on Windows. For this guide, use Podman Desktop and choose **WSL 2** as the default virtualization provider unless your environment requires **Hyper-V**.
 
@@ -175,6 +145,36 @@ Podman provides local container tooling for workshop exercises that need contain
    ```powershell
    podman info
    ```
+
+## Task 3: Install Visual Studio Code
+
+1. Open [code.visualstudio.com](https://code.visualstudio.com/download) in your browser and click the Windows download for Visual Studio Code.
+
+   ![Visual Studio Code download page showing the Windows installer option](./images/vscode-install-download-page.png)
+
+2. Open the downloaded installer, select **I accept the agreement**, and then click **Next**.
+
+   ![Visual Studio Code installer showing the license agreement screen](./images/vscode-install-license-agreement.png)
+
+3. On the **Select Additional Tasks** screen, check the options you want, such as **Add to PATH** and Windows Explorer context menu entries, and then click **Next**.
+
+   ![Visual Studio Code installer showing the Select Additional Tasks screen](./images/vscode-install-select-additional-tasks.png)
+
+4. On the **Ready to Install** screen, click **Install**.
+
+   ![Visual Studio Code installer showing the Ready to Install screen](./images/vscode-install-ready-to-install.png)
+
+5. When the installation finishes, leave **Launch Visual Studio Code** checked and click **Finish**.
+
+   ![Visual Studio Code Setup Wizard completion screen with Launch Visual Studio Code selected](./images/vscode-install-completion-screen.png)
+
+6. If VS Code does not open automatically, click **Start**, type **Visual Studio Code**, and click the app.
+
+   ![Visual Studio Code first-launch welcome screen after installation](./images/vscode-first-launch-welcome-screen.png)
+
+7. Optionally right-click the Visual Studio Code icon on the taskbar and select **Pin to taskbar** for quick access.
+
+---
 
 ## Task 4: Sign in to GitHub from VS Code
 
