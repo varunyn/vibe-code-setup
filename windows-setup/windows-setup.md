@@ -14,6 +14,7 @@ In this step, you will:
 
 - Install Git
 - Install Visual Studio Code
+- Install Podman
 - Configure the SQL Developer extension in VS Code
 - Configure MCP in Cline for the SQL Developer extension
 - Sign in to GitHub from VS Code
@@ -109,7 +110,73 @@ Git is required for cloning repositories, working with branches, and authenticat
 
 ---
 
-## Task 3: Sign in to GitHub from VS Code
+## Task 3: Install Podman
+
+Podman provides local container tooling for workshop exercises that need containers on Windows. For this guide, use Podman Desktop and choose **WSL 2** as the default virtualization provider unless your environment requires **Hyper-V**.
+
+1. Download Podman Desktop for Windows from [podman-desktop.io](https://podman-desktop.io/downloads). Open the installer and choose whether to install it for all users or only for your account.
+
+   ![Podman Desktop Setup wizard showing installation scope options for Windows](./images/podman-desktop-installation-scope.png)
+
+2. Continue through the Podman Desktop installer. When the setup finishes, leave **Run Podman Desktop** selected and click **Finish**.
+
+   ![Completing Podman Desktop Setup with Run Podman Desktop selected](./images/podman-desktop-installation-complete.png)
+
+3. When Podman Desktop opens for the first time, review the welcome screen and continue through the onboarding flow.
+
+   ![Podman Desktop first-run welcome screen with optional extensions selection](./images/podman-desktop-welcome-screen.png)
+
+4. If Podman Desktop reports that Podman is not installed, click the option to install it.
+
+   ![Podman Desktop onboarding indicating Podman is not installed and offering to install it](./images/podman-desktop-podman-not-installed.png)
+
+5. Confirm that you want Podman Desktop to install Podman when prompted.
+
+   ![Podman Desktop confirmation dialog prompting to install Podman](./images/podman-desktop-install-podman-prompt.png)
+
+6. In the Podman CLI Setup Wizard, choose **WSL 2** as the virtualization provider unless your environment requires **Hyper-V**, and continue through the setup wizard.
+
+   ![Podman CLI Setup Wizard asking to select the virtualization provider on Windows](./images/podman-cli-setup-virtualization-provider.png)
+
+7. If Windows prompts you to complete or review WSL setup, finish that process and then return to Podman Desktop.
+
+   ![Windows Subsystem for Linux welcome screen during Podman setup on Windows](./images/windows-wsl-welcome-screen.png)
+
+8. Finish the Podman CLI Setup Wizard.
+
+   ![Podman CLI Setup Wizard completion screen on Windows](./images/podman-cli-setup-complete.png)
+
+9. If Podman Desktop reports that no machine exists yet, choose the option to create one.
+
+   ![Podman Desktop onboarding indicating that no Podman machine exists yet](./images/podman-desktop-create-machine-prompt.png)
+
+10. Review the default machine settings, keep **Start machine now** selected, and create the machine.
+
+   ![Create a Podman machine screen in Podman Desktop on Windows](./images/podman-desktop-create-machine-form.png)
+
+11. Wait for Podman Desktop to finish the setup and confirm that Podman is configured correctly.
+
+   ![Podman Desktop onboarding confirming that Podman is set up correctly](./images/podman-desktop-setup-complete.png)
+
+12. Open **PowerShell** or **Terminal** and verify the Podman CLI installation:
+
+   ```powershell
+   podman --version
+   ```
+
+   ![Windows terminal showing successful podman --version output](./images/podman-version-check-terminal.png)
+
+13. Verify that the Podman Desktop dashboard opens correctly.
+
+   ![Podman Desktop dashboard after setup on Windows](./images/podman-desktop-dashboard.png)
+
+14. Verify that Podman can connect to the local machine:
+
+   ```powershell
+   podman info
+   ```
+
+## Task 4: Sign in to GitHub from VS Code
 
 1. Open VS Code.
 2. Click the **Accounts** icon on the left side of VS Code, and then click **Sign In**.
@@ -132,7 +199,7 @@ This sign-in is useful for source control workflows and for tools that integrate
 
 ---
 
-## Task 4: Install the SQL Developer Extension in VS Code
+## Task 5: Install the SQL Developer Extension in VS Code
 
 1. In VS Code, click **Extensions** in the left-hand panel, search for **Oracle SQL Developer Extension**, and then click **Install** on the Oracle SQL Developer extension page.
 
@@ -146,7 +213,7 @@ This sign-in is useful for source control workflows and for tools that integrate
 
 ---
 
-## Task 5: Request Oracle Code Assist Access in OIM
+## Task 6: Request Oracle Code Assist Access in OIM
 
 1. Sign in to [Oracle Identity Manager (OIM)](https://oim.oraclecorp.com/identity/faces/home). _VPN is required to open this link._
 2. Open **My Access** and check whether Oracle Code Assist access is already assigned to you.
@@ -163,7 +230,7 @@ This sign-in is useful for source control workflows and for tools that integrate
 
 ---
 
-## Task 6: Install Cline, Configure Oracle Code Assist and SQLcl MCP
+## Task 7: Install Cline, Configure Oracle Code Assist and SQLcl MCP
 
 1. Click **Extensions** in the left-hand panel, search for **Cline**, and then click **Install**.
 
@@ -201,7 +268,7 @@ This sign-in is useful for source control workflows and for tools that integrate
 
 ---
 
-## Task 7: Install Oracle Instant Client
+## Task 8: Install Oracle Instant Client
 
 Oracle Instant Client is required for tools and extensions that depend on Oracle client libraries.
 
@@ -242,7 +309,7 @@ Oracle Instant Client is required for tools and extensions that depend on Oracle
 
 ---
 
-## Task 8: Install OCI CLI
+## Task 9: Install OCI CLI
 
 1. Open this [link](https://docs.oracle.com/en-us/iaas/Content/API/SDKDocs/cliinstall.htm#InstallingCLI__windows) for the Windows setup instructions for OCI CLI.
 
@@ -282,7 +349,7 @@ Oracle Instant Client is required for tools and extensions that depend on Oracle
 
 ---
 
-## Task 9: Optional - Install Core Programming Languages
+## Task 10: Optional - Install Core Programming Languages
 
 Install these if they are not already available on your machine.
 
@@ -341,15 +408,13 @@ Install these if they are not already available on your machine.
 
 ---
 
-## Task 10: Optional - Install and Set Up Codex
+## Task 11: Optional - Install and Set Up Codex
 
 1. Open the [Codex download page](https://openai.com/codex/) in your browser and click the Windows download option if available.
 2. Open the downloaded installer and follow the setup wizard.
 3. Open the Oracle Code Assist API key page and click the copy button for the Codex environment setup command or API key details needed for your local setup.
 4. In **PowerShell** or another terminal, paste the copied command or credentials, run the Codex setup or login flow, and complete authentication with your Oracle Code Assist API key.
 5. Launch Codex and verify that it opens successfully and responds to a prompt.
-
-<!-- Add Windows screenshots: download page, installer, terminal login flow, app ready -->
 
 ---
 
@@ -359,6 +424,7 @@ Before moving on, confirm that:
 
 - Git runs from Command Prompt or PowerShell
 - VS Code opens correctly
+- Podman is installed and `podman info` runs successfully
 - GitHub is connected in VS Code
 - SQL Developer extension is installed
 - Cline is installed and opens correctly
