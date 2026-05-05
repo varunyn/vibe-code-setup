@@ -423,6 +423,8 @@ Install these if they are not already available on your machine.
 
 7. Add or update the following settings in `config.toml`:
 
+   ![Windows Codex config.toml file showing Oracle Code Assist settings](./images/codex-config-toml-oracle-code-assist-settings-windows.png)
+
    ```toml
    approval_policy = "on-failure"
    preferred_auth_method = "apikey"
