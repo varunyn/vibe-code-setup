@@ -417,6 +417,7 @@ Install these if they are not already available on your machine.
    ![Oracle Code Assist API key page showing the Copy Codex Environment Setup Command button](../mac-setup/images/oracle-code-assist-codex-api-key-page.png)
 
 5. In **PowerShell** or another terminal, paste the copied command or credentials, run the Codex setup or login flow, and complete authentication with your Oracle Code Assist API key.
+   ![Windows PowerShell showing successful Codex login with an Oracle Code Assist API key](./images/windows-powershell-codex-login-success.png)
 6. In Codex, open **Settings**, select **Configuration**, and click **Open config.toml**.
    ![Codex settings showing the Configuration page and the Open config.toml button](../mac-setup/images/codex-open-config-settings.png)
 
