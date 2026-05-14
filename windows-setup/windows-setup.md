@@ -412,16 +412,29 @@ Install these if they are not already available on your machine.
 
 1. Open the [Codex download page](https://openai.com/codex/) in your browser and click the Windows download option if available.
 2. Open the downloaded installer and follow the setup wizard.
-3. In **PowerShell** or another terminal, install the Codex CLI using the Codex installation instructions for Windows.
-4. Open the [Oracle Code Assist API key page](https://apex.oraclecorp.com/pls/apex/r/oca/api-key/home) and click the copy button for the Codex environment setup command or API key details needed for your local setup.
+3. Open the [Oracle Code Assist API key page](https://apex.oraclecorp.com/pls/apex/r/oca/api-key/home) and click the copy button for the Codex environment setup command or API key details needed for your local setup.
+
    ![Oracle Code Assist API key page showing the Copy Codex Environment Setup Command button](../mac-setup/images/oracle-code-assist-codex-api-key-page.png)
 
-5. In **PowerShell** or another terminal, paste the copied command or credentials, run the Codex setup or login flow, and complete authentication with your Oracle Code Assist API key.
-   ![Windows PowerShell showing successful Codex login with an Oracle Code Assist API key](./images/windows-powershell-codex-login-success.png)
-6. In Codex, open **Settings**, select **Configuration**, and click **Open config.toml**.
-   ![Codex settings showing the Configuration page and the Open config.toml button](../mac-setup/images/codex-open-config-settings.png)
+4. In **PowerShell** or another terminal, install the Codex CLI using the Codex installation instructions for Windows.
 
-7. Add or update the following settings in `config.toml`:
+   ```powershell
+   npm install -g @openai/codex
+   codex --version
+   ```
+
+   ![Windows PowerShell showing Codex CLI installation, version check, and login flow](./images/windows-powershell-codex-install-login.png)
+
+5. Open Codex for the first time and choose how you want to sign in.
+
+   ![Codex welcome screen showing the available sign-in options](./images/codex-welcome-sign-in-screen.png)
+
+6. When prompted, paste your Oracle Code Assist API key into the Codex sign-in flow and continue.
+
+   ![Codex welcome screen with the API key entry field](./images/codex-enter-api-key-screen.png)
+
+7. After sign-in completes, open **Settings**, select **Configuration**, and click **Open config.toml**.
+8. Add or update the following settings in `config.toml`:
 
    ![Windows Codex config.toml file showing Oracle Code Assist settings](./images/codex-config-toml-oracle-code-assist-settings-windows.png)
 
@@ -455,8 +468,9 @@ Install these if they are not already available on your machine.
    model_reasoning_effort = "medium"
    ```
 
-8. Save the file, restart Codex if needed, and verify that it opens successfully and responds to a prompt.
-   ![Codex app open and responding successfully after setup](../mac-setup/images/codex-app-ready-after-setup.png)
+9. Save the file, restart Codex if needed, and verify that it opens successfully and responds to a prompt.
+
+   ![Codex home screen after setup on Windows](./images/codex-home-screen.png)
 
 ---
 
