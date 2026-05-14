@@ -200,20 +200,22 @@ This sign-in is useful for source control workflows and for tools that integrate
 
 1. Follow this [link](https://marketplace.visualstudio.com/items?itemName=saoudrizwan.claude-dev) to install Cline from the VS Code Marketplace.
    ![Installing the Cline extension from the Visual Studio Code marketplace](./images/install-cline-extension.png)
-2. Open the **Cline** panel in VS Code. Click **Settings**, choose **Oracle Code Assist** as the API provider, select **I'm an Oracle Employee**, and then click **Sign in with Oracle Code Assist**.
+2. In VS Code, click the **Cline** icon in the Activity Bar to open the Cline panel.
+   ![Opening the Cline panel from the VS Code Activity Bar](./images/open-cline-panel.png)
+3. In the **Cline** panel, click **Settings**, choose **Oracle Code Assist** as the API provider, select **I'm an Oracle Employee**, and then click **Sign in with Oracle Code Assist**.
    ![Configuring Oracle Code Assist in the Cline panel](./images/configure-oracle-code-assist.png)
-3. Once signed in, choose the LLM model you want to use.
+4. Once signed in, choose the LLM model you want to use.
    ![Selecting the LLM model after Oracle Code Assist sign-in](./images/choose-llm-model.png)
-4. Press **Command+Shift+P** in VS Code to open the Command Palette.
+5. Press **Command+Shift+P** in VS Code to open the Command Palette.
    ![Opening the Command Palette and searching for Configure Cline SQLcl MCP](./images/cline-command-palette-configure-sqlcl-mcp.png)
-5. Search for **Configure Cline SQLcl MCP** and open it.
-6. Open the Cline MCP configuration area.
+6. Search for **Configure Cline SQLcl MCP** and open it.
+7. Open the Cline MCP configuration area.
    ![Opening the Cline MCP configuration area](./images/cline-mcp-configuration.png)
-7. Review or enable the SQLcl - SQL Developer MCP configuration so that Cline can work with the SQL Developer extension.
+8. Review or enable the SQLcl - SQL Developer MCP configuration so that Cline can work with the SQL Developer extension.
    ![Cline MCP settings showing the SQLcl - SQL Developer configuration](./images/cline-sqlcl-mcp-settings.png)
-8. Save the configuration.
-9. Restart VS Code if required.
-10. Verify that Cline can see and use the SQL Developer tooling.
+9. Save the configuration.
+10. Restart VS Code if required.
+11. Verify that Cline can see and use the SQL Developer tooling.
 
 ---
 
