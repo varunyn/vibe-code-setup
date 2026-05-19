@@ -19,6 +19,7 @@ You will use this repo to:
 
 This repository currently includes:
 
+- [**Persona-Based Lab Selection**](../persona-selection/persona-selection.md) - Choose a lab path based on your persona and workshop goals
 - **Step 1: Local Machine Install and Setup for Cloud Vibe Code Development on macOS**
 - **Lab 1: Configure Cline AI Assistant**
 - **Workshop shell assets** used under the `workshops/` directory
@@ -38,6 +39,7 @@ Before you begin, make sure you have:
 
 ## Remaining Content Overview
 
+- **persona-selection/** - [Persona-based lab selection page](../persona-selection/persona-selection.md) with links to the workshop options
 - **mac-setup/** - Mac local machine setup instructions for Git, VS Code, SQL Developer, Oracle Code Assist, Cline, Instant Client, OCI CLI, and optional language runtimes
 - **cline-config/** - Cline and GitHub Copilot configuration steps inside VS Code
 - **workshops/** - Existing workshop shell assets
