@@ -23,6 +23,11 @@
       "filename": "../../windows-setup/windows-setup.md"
     },
     {
+      "title": "Persona-Based Lab Selection",
+      "description": "Choose a persona and open the lab that best matches your workshop goals.",
+      "filename": "../../persona-selection/persona-selection.md"
+    },
+    {
       "title": "Need Help?",
       "description": "Solutions to common problems and directions for receiving live help.",
       "filename": "https://oracle-livelabs.github.io/common/labs/need-help/need-help-freetier.md"

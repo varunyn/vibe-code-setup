@@ -1,0 +1,48 @@
+.persona-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+  margin: 24px 0;
+}
+
+.persona-card {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px;
+  border: 1px solid #d6dfe6;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 4px 12px rgba(15, 23, 42, 0.08);
+  height: 100%;
+}
+
+.persona-card h4 {
+  margin: 0;
+}
+
+.persona-card p {
+  margin: 0;
+}
+
+.persona-card img {
+  width: 100%;
+  max-width: none;
+  height: auto;
+  max-height: 220px;
+  margin: 0;
+  display: block;
+  border-radius: 12px;
+  object-fit: contain;
+}
+
+.persona-card a {
+  display: inline-block;
+  font-weight: 600;
+}
+
+@media (max-width: 900px) {
+  .persona-grid {
+    grid-template-columns: 1fr;
+  }
+}
