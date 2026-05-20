@@ -2,27 +2,39 @@
 
 ## About this Repository
 
-This repository now contains a reduced workshop flow focused on local macOS setup, Visual Studio Code configuration, and supporting workshop packaging assets. It is intended to help you prepare your machine for Cloud Vibe Code development and complete the core IDE configuration before moving into any environment-specific or separately managed workshop exercises.
+This workshop prepares your laptop for Cloud Vibe Code development and then helps you choose the persona-based lab path that best matches what you want to build. It covers the local tooling setup for macOS and Windows, Visual Studio Code configuration, Oracle Code Assist, Cline, SQL Developer, SQLcl MCP, Oracle client tooling, and the follow-on persona labs.
 
-You will use this repo to:
+Use this workshop to:
 
-- Prepare your Mac for development
-- Configure Visual Studio Code for Oracle and GitHub workflows
-- Install and validate Cline in VS Code
-- Keep the workshop packaging assets used by the existing workshop shells
+- Prepare a macOS or Windows machine for the labs.
+- Configure Visual Studio Code with Oracle developer tooling.
+- Install and validate Cline with Oracle Code Assist.
+- Configure SQLcl MCP for database-assisted AI workflows.
+- Choose a persona lab for SQLcl MCP, AI agents, Oracle APEX, or Mongo-style application development.
 
 > **Estimated Time:** 45-60 minutes
 
 ---
 
-### Repository Contents
+### Workshop Flow
 
-This repository currently includes:
+Complete the setup path for your operating system first, then choose a persona lab.
 
-- [**Persona-Based Lab Selection**](../persona-selection/persona-selection.md) - Choose a lab path based on your persona and workshop goals
-- **Step 1: Local Machine Install and Setup for Cloud Vibe Code Development on macOS**
-- **Lab 1: Configure Cline AI Assistant**
-- **Workshop shell assets** used under the `workshops/` directory
+- [**macOS setup**](?lab=mac-setup) - Install Git, Podman, Visual Studio Code, SQL Developer, Oracle Code Assist, Cline, SQLcl MCP, Oracle Instant Client, OCI CLI, and optional language runtimes.
+- [**Windows setup**](?lab=windows-setup) - Install Git, Podman, Visual Studio Code, SQL Developer, Oracle Code Assist, Cline, SQLcl MCP, Oracle Instant Client, OCI CLI, and optional language runtimes.
+- [**Persona-Based Lab Selection**](?lab=persona-selection) - Pick the lab path that matches your role, goal, or customer scenario.
+- [**Need Help?**](?lab=need-help) - Use the workshop Slack channel if you get stuck.
+
+---
+
+### Persona Labs
+
+After setup, choose one of these paths:
+
+- [**LOB/Shadow IT Guy**](?lab=lob-shadow-it-guy) - Use SQLcl MCP with an AI editor for database interaction workflows.
+- [**AI Agent Database Developer**](?lab=ai-agent-database-developer) - Build an AI agent pattern backed by Oracle AI Database.
+- [**DBA Vibe Coder**](?lab=dba-vibe-coder) - Build a generative AI application flow with Oracle APEX.
+- [**Mongo Application Developer**](?lab=mongo-application-developer) - Follow the Mongo developer journey on Oracle AI Database 26ai.
 
 ---
 
@@ -30,27 +42,11 @@ This repository currently includes:
 
 Before you begin, make sure you have:
 
-- A Mac with local administrator access
-- A GitHub account
-- An Oracle account for workshop access
-- Familiarity with basic command-line usage
-
----
-
-## Remaining Content Overview
-
-- **persona-selection/** - [Persona-based lab selection page](../persona-selection/persona-selection.md) with links to the workshop options
-- **mac-setup/** - Mac local machine setup instructions for Git, VS Code, SQL Developer, Oracle Code Assist, Cline, Instant Client, OCI CLI, and optional language runtimes
-- **cline-config/** - Cline and GitHub Copilot configuration steps inside VS Code
-- **workshops/** - Existing workshop shell assets
-
----
-
-## Learn More
-
-- [Visual Studio Code](https://code.visualstudio.com/)
-
----
+- A macOS or Windows machine with local administrator access.
+- A GitHub account.
+- An Oracle account with access to the workshop resources.
+- Access to Oracle Code Assist.
+- Familiarity with basic command-line usage.
 
 ## Acknowledgements
 
@@ -64,4 +60,4 @@ Before you begin, make sure you have:
 
 **Last Updated By/Date:**
 
-- **Updated for reduced Mac-first repo scope**, March 2026
+- Varun Yadav, May 2026

@@ -22,27 +22,27 @@ In this step, you will:
     <h4>LOB/Shadow IT Guy</h4>
     <img src="../../persona-selection/images/Database%20Developer.png" alt="LOB/Shadow IT Guy" />
     <p>Choose this lab if you want to understand how SQLcl and MCP work together so AI tools can interact with database workflows more effectively.</p>
-    <a href="https://livelabs.oracle.com/ords/r/dbpm/livelabs/view-workshop?wid=4285&clear=RR,180&session=111338387534908">Open lab</a>
+    <a href="?lab=lob-shadow-it-guy">Get started</a>
   </div>
 
   <div class="persona-card">
     <h4>AI Agent Database Developer</h4>
     <img src="../../persona-selection/images/AI%20Agent%20Builder.png" alt="AI Agent Database Developer" />
     <p>Choose this lab if you want to build AI agents with persistent memory and learn how Oracle AI Database can support more capable agent experiences.</p>
-    <a href="https://livelabs.oracle.com/ords/r/dbpm/livelabs/view-workshop?clear=RR,180&wid=4315">Open lab</a>
+    <a href="?lab=ai-agent-database-developer">Get started</a>
   </div>
 
   <div class="persona-card">
     <h4>DBA Vibe Coder</h4>
     <img src="../../persona-selection/images/Apex%20Builder.png" alt="DBA Vibe Coder" />
     <p>Choose this lab if you want to create a user-facing Oracle APEX application that uses generative AI to power a practical question-and-answer experience.</p>
-    <a href="https://livelabs.oracle.com/ords/r/dbpm/livelabs/view-workshop?clear=RR,180&wid=3947">Open lab</a>
+    <a href="?lab=dba-vibe-coder">Get started</a>
   </div>
 
   <div class="persona-card">
     <h4>Mongo Application Developer</h4>
     <img src="../../persona-selection/images/Mongo%20developer.png" alt="Mongo Application Developer" />
     <p>Choose this lab if you want to explore how Mongo-style applications can be built, migrated, and scaled on Oracle AI Database 26ai.</p>
-    <a href="https://dspdr.github.io/ajd-mgo-journey/workshops/tenancy/index.html?lab=introduction">Open lab</a>
+    <a href="?lab=mongo-application-developer">Get started</a>
   </div>
 </div>

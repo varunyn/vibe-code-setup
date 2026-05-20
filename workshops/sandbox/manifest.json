@@ -4,13 +4,8 @@
   "tutorials": [
     {
       "title": "Introduction",
-      "description": "Overview of the reduced Mac-first workshop scope and repository contents.",
+      "description": "Overview of the local setup flow, persona selection, and repository contents.",
       "filename": "../../introduction/introduction.md"
-    },
-    {
-      "title": "Get Started",
-      "description": "Sign in to tenancy",
-      "filename": "https://oracle-livelabs.github.io/common/labs/cloud-login/cloud-login.md"
     },
     {
       "title": "Step 1: Local Machine Install and Setup for Cloud Vibe Code Development on macOS",
@@ -24,8 +19,8 @@
     },
     {
       "title": "Need Help?",
-      "description": "Solutions to common problems and directions for receiving live help.",
-      "filename": "https://oracle-livelabs.github.io/common/labs/need-help/need-help-freetier.md"
+      "description": "Workshop support channel.",
+      "filename": "../../need-help/need-help.md"
     }
   ]
 }
