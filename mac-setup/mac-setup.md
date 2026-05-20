@@ -439,4 +439,4 @@ Once your Mac is ready, continue to the IDE-focused configuration and workshop l
 
 **Last Updated By/Date:**
 
-- **Generated for macOS setup draft**, March 2026
+- Varun Yadav, May 2026

@@ -122,29 +122,29 @@ Podman provides local container tooling for workshop exercises that need contain
 
 10. Review the default machine settings, keep **Start machine now** selected, and create the machine.
 
-   ![Create a Podman machine screen in Podman Desktop on Windows](./images/podman-desktop-create-machine-form.png)
+![Create a Podman machine screen in Podman Desktop on Windows](./images/podman-desktop-create-machine-form.png)
 
 11. Wait for Podman Desktop to finish the setup and confirm that Podman is configured correctly.
 
-   ![Podman Desktop onboarding confirming that Podman is set up correctly](./images/podman-desktop-setup-complete.png)
+![Podman Desktop onboarding confirming that Podman is set up correctly](./images/podman-desktop-setup-complete.png)
 
 12. Open **PowerShell** or **Terminal** and verify the Podman CLI installation:
 
-   ```powershell
-   podman --version
-   ```
+```powershell
+podman --version
+```
 
-   ![Windows terminal showing successful podman --version output](./images/podman-version-check-terminal.png)
+![Windows terminal showing successful podman --version output](./images/podman-version-check-terminal.png)
 
 13. Verify that the Podman Desktop dashboard opens correctly.
 
-   ![Podman Desktop dashboard after setup on Windows](./images/podman-desktop-dashboard.png)
+![Podman Desktop dashboard after setup on Windows](./images/podman-desktop-dashboard.png)
 
 14. Verify that Podman can connect to the local machine:
 
-   ```powershell
-   podman info
-   ```
+```powershell
+podman info
+```
 
 ## Task 3: Install Visual Studio Code
 
@@ -512,4 +512,4 @@ Once your Windows machine is ready, continue to the IDE-focused configuration an
 
 **Last Updated By/Date:**
 
-- **Generated for Windows setup draft**, April 2026
+- Varun Yadav, May 2026

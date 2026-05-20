@@ -39,8 +39,6 @@ This path is for builders who want to move quickly with database tooling, SQL wo
 
 ### Start Here
 
-Begin with the workshop from the first section and follow the lab in sequence.
-
 <div class="persona-cta">
   <a href="https://livelabs.oracle.com/ords/r/dbpm/livelabs/view-workshop?wid=4285&clear=RR,180&session=111338387534908">Launch Lab</a>
 </div>

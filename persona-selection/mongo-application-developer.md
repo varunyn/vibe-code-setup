@@ -38,8 +38,6 @@ This path is for developers who want to understand how Mongo-style applications 
 
 ### Start Here
 
-Open the workshop and begin on **Lab 2** rather than the introduction.
-
 <div class="persona-cta">
   <a href="https://dspdr.github.io/ajd-mgo-journey/workshops/tenancy/index.html?lab=introduction">Launch Lab</a>
 </div>

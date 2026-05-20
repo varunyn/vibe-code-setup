@@ -38,8 +38,6 @@ This path is for developers who want to build AI agents that do more than answer
 
 ### Start Here
 
-Begin at the start of the workshop and follow the memory-building flow in order.
-
 <div class="persona-cta">
   <a href="https://livelabs.oracle.com/ords/r/dbpm/livelabs/view-workshop?clear=RR,180&wid=4315">Launch Lab</a>
 </div>

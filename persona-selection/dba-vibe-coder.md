@@ -39,8 +39,6 @@ This path is for database-minded builders who want to create an end-user experie
 
 ### Start Here
 
-Begin at the first section and work through the application flow in sequence.
-
 <div class="persona-cta">
   <a href="https://livelabs.oracle.com/ords/r/dbpm/livelabs/view-workshop?clear=RR,180&wid=3947">Launch Lab</a>
 </div>
