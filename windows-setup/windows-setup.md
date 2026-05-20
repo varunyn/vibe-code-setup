@@ -504,6 +504,7 @@ Once your Windows machine is ready, continue to the IDE-focused configuration an
 
 **Authors**
 
+- **Chinmay Thakar**, Senior Cloud Engineer, ONA Developer Experience
 - **Varun Yadav**, Senior Cloud Engineer, ONA Developer Experience
 
 **Contributors**
