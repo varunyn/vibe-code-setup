@@ -39,6 +39,8 @@ This path is for builders who want to move quickly with database tooling, SQL wo
 
 ### Start Here
 
+- This lab uses FreeSQL, but you need to create your own ADB before you begin.
+
 <div class="persona-cta">
   <a href="https://livelabs.oracle.com/ords/r/dbpm/livelabs/view-workshop?wid=4285&clear=RR,180&session=111338387534908">Launch Lab</a>
 </div>

@@ -18,8 +18,8 @@ This path is for database-minded builders who want to create an end-user experie
 
 <div class="coach-grid">
   <div class="coach-card">
-    <img src="../../persona-selection/images/pete.png" alt="pete" />
-    <p>pete</p>
+    <img src="../../persona-selection/images/pete.png" alt="Pete" />
+    <p>Pete</p>
   </div>
   <div class="coach-card">
     <img src="../../persona-selection/images/Costel.png" alt="Costel" />
