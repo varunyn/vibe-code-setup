@@ -2,15 +2,15 @@
 
 ## Introduction
 
-This path is for builders who want to move quickly with database tooling, SQL workflows, and MCP-based agent interactions without needing deep platform engineering experience up front.
+This path is for database-minded builders who want to create an end-user experience quickly and see how generative AI can power a practical Oracle APEX application.
 
 ---
 
 ### What You Will Learn
 
-- How SQLcl and MCP fit together in an AI-assisted database workflow
-- How tooling can help a line-of-business or shadow IT builder move faster
-- Where this lab fits if you want a practical database-first starting point
+- How to build a user-facing Oracle APEX experience with generative AI
+- How a question-and-answer workflow can be packaged into an application
+- How to move from database skills into a higher-level app-building flow
 
 ---
 
@@ -18,12 +18,12 @@ This path is for builders who want to move quickly with database tooling, SQL wo
 
 <div class="coach-grid">
   <div class="coach-card">
-    <img src="../../persona-selection/images/Matthew.png" alt="Matthew" />
-    <p>Matthew</p>
+    <img src="../../persona-selection/images/pete.png" alt="Pete" />
+    <p>Pete</p>
   </div>
   <div class="coach-card">
-    <img src="../../persona-selection/images/Rene.png" alt="Rene" />
-    <p>Rene</p>
+    <img src="../../persona-selection/images/Costel.png" alt="Costel" />
+    <p>Costel</p>
   </div>
 </div>
 
@@ -31,18 +31,16 @@ This path is for builders who want to move quickly with database tooling, SQL wo
 
 ### Before You Start
 
-- Use this path if you want to understand the workflow first before building a full application
-- This is a good fit when you want a practical entry point into SQLcl and MCP concepts
-- Complete the SQLcl MCP setup in the local machine setup first: [**Task 8** on macOS](?lab=mac-setup#Task8:InstallClineConfigureOracleCodeAssistandSQLMCP) or [**Task 7** on Windows](?lab=windows-setup#Task7:InstallClineConfigureOracleCodeAssistandSQLclMCP). Cline should be configured so it can use the SQLcl MCP server for database interaction.
+- Use this path if you want to see a more application-oriented result than a tooling-only workflow
+- This lab is a good match if you like rapid iteration and guided building in Oracle APEX
+- Keep your AI tooling ready so you can move quickly through the app-building steps
 
 ---
 
 ### Start Here
 
-- This lab uses FreeSQL, but you need to create your own ADB before you begin.
-
 <div class="persona-cta">
-  <a href="https://livelabs.oracle.com/ords/r/dbpm/livelabs/view-workshop?wid=4285&clear=RR,180&session=111338387534908">Launch Lab</a>
+  <a href="https://livelabs.oracle.com/ords/r/dbpm/livelabs/view-workshop?clear=RR,180&wid=3947">Launch Lab</a>
 </div>
 
 ---
