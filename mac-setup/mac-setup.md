@@ -354,51 +354,17 @@ Install these if they are not already available on your machine.
    brew install codex
    ```
 
-4. Open the [Oracle Code Assist API key page](https://apex.oraclecorp.com/pls/apex/r/oca/api-key/home) and copy the Codex environment setup command or API key details needed for your local setup.
-   ![Oracle Code Assist API key page showing the Copy Codex Environment Setup Command button](./images/oracle-code-assist-codex-api-key-page.png)
+4. Open **Codex** from the **Applications** folder. On the welcome screen, select **Continue with ChatGPT**.
+   ![Codex welcome screen showing the Sign in another way option](./images/codex-welcome-sign-in-another-way.png)
 
-5. In Terminal, run the Codex setup or login flow and complete authentication with your Oracle Code Assist API key.
-   ![Terminal showing a successful Codex CLI login after reading the API key from standard input](./images/codex-cli-login-success-terminal.png)
+5. Enter your work email address and select **Continue**. It will then take you to Oracle SSO login
+   ![ChatGPT sign-in page showing the email address field and Continue button](./images/codex-email-sign-in.png)
 
-6. In Codex, open **Settings**, select **Configuration**, and click **Open config.toml**.
-   ![Codex settings on macOS showing the Configuration page and the Open config.toml button](./images/codex-open-config-settings.png)
+6. When prompted to sign in to Codex with ChatGPT, confirm that the correct account is selected and select **Continue**.
+   ![Codex ChatGPT authorization screen showing the selected account and Continue button](./images/codex-chatgpt-authorization.png)
 
-7. Add or update the following settings in `~/.codex/config.toml`:
-
-   ```toml
-   approval_policy = "on-failure"
-   preferred_auth_method = "apikey"
-   model_provider = "oca"
-   profile = "gpt-5-3-codex"
-   sandbox_mode = "danger-full-access"
-   web_search = "live"
-   trust_level = "trusted"
-   personality = "pragmatic"
-
-   [model_providers.oca]
-   base_url = "https://code-internal.aiservice.us-chicago-1.oci.oraclecloud.com/20250206/app/litellm"
-   http_headers = { "client" = "codex-cli", "client-version" = "0" }
-   model = "oca/gpt5"
-   name = "Oracle Code Assist"
-   wire_api = "responses"
-
-   [profiles.gpt-5-5]
-   model = "oca/gpt-5.5"
-   model_provider = "oca"
-   review_model = "oca/gpt-5.5"
-
-   [profiles.gpt-5-3-codex]
-   model = "gpt-5.5"
-   model_provider = "oca"
-   review_model = "oca/gpt-5.3-codex"
-   personality = "pragmatic"
-   model_reasoning_effort = "medium"
-   ```
-
-   ![Codex config.toml open on macOS with Oracle Code Assist settings added](./images/codex-config-toml-oracle-code-assist-settings.png)
-
-8. Save the file, restart Codex if needed, and verify that it opens successfully and responds to a prompt.
-   ![Codex macOS app open and responding successfully after setup](./images/codex-app-ready-after-setup.png)
+7. In Codex, open the account menu and verify that your email address and organization are shown.
+   ![Codex account menu showing the signed-in email address and organization](./images/codex-account-organization-verified.png)
 
 ---
 

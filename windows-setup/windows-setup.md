@@ -414,11 +414,7 @@ Install these if they are not already available on your machine.
 
 1. Open the [Codex download page](https://openai.com/codex/) in your browser and click the Windows download option if available.
 2. Open the downloaded installer and follow the setup wizard.
-3. Open the [Oracle Code Assist API key page](https://apex.oraclecorp.com/pls/apex/r/oca/api-key/home) and click the copy button for the Codex environment setup command or API key details needed for your local setup.
-
-   ![Oracle Code Assist API key page showing the Copy Codex Environment Setup Command button](../mac-setup/images/oracle-code-assist-codex-api-key-page.png)
-
-4. In **PowerShell** or another terminal, install the Codex CLI using the Codex installation instructions for Windows.
+3. In **PowerShell** or another terminal, install the Codex CLI using the Codex installation instructions for Windows.
 
    ```powershell
    npm install -g @openai/codex
@@ -427,52 +423,21 @@ Install these if they are not already available on your machine.
 
    ![Windows PowerShell showing Codex CLI installation, version check, and login flow](./images/windows-powershell-codex-install-login.png)
 
-5. Open Codex for the first time and choose how you want to sign in.
+4. Open **Codex** from the **Start** menu. On the welcome screen, select **Continue with ChatGPT**.
 
-   ![Codex welcome screen showing the available sign-in options](./images/codex-welcome-sign-in-screen.png)
+   ![Codex welcome screen showing the Continue with ChatGPT option](../mac-setup/images/codex-welcome-sign-in-another-way.png)
 
-6. When prompted, paste your Oracle Code Assist API key into the Codex sign-in flow and continue.
+5. Enter your work email address and select **Continue**. It will then take you to Oracle SSO login.
 
-   ![Codex welcome screen with the API key entry field](./images/codex-enter-api-key-screen.png)
+   ![ChatGPT sign-in page showing the email address field and Continue button](../mac-setup/images/codex-email-sign-in.png)
 
-7. After sign-in completes, open **Settings**, select **Configuration**, and click **Open config.toml**.
-8. Add or update the following settings in `config.toml`:
+6. When prompted to sign in to Codex with ChatGPT, confirm that the correct account is selected and select **Continue**.
 
-   ![Windows Codex config.toml file showing Oracle Code Assist settings](./images/codex-config-toml-oracle-code-assist-settings-windows.png)
+   ![Codex ChatGPT authorization screen showing the selected account and Continue button](../mac-setup/images/codex-chatgpt-authorization.png)
 
-   ```toml
-   approval_policy = "on-failure"
-   preferred_auth_method = "apikey"
-   model_provider = "oca"
-   profile = "gpt-5-3-codex"
-   sandbox_mode = "danger-full-access"
-   web_search = "live"
-   trust_level = "trusted"
-   personality = "pragmatic"
+7. In Codex, open the account menu and verify that your email address and organization are shown.
 
-   [model_providers.oca]
-   base_url = "https://code-internal.aiservice.us-chicago-1.oci.oraclecloud.com/20250206/app/litellm"
-   http_headers = { "client" = "codex-cli", "client-version" = "0" }
-   model = "oca/gpt5"
-   name = "Oracle Code Assist"
-   wire_api = "responses"
-
-   [profiles.gpt-5-5]
-   model = "oca/gpt-5.5"
-   model_provider = "oca"
-   review_model = "oca/gpt-5.5"
-
-   [profiles.gpt-5-3-codex]
-   model = "gpt-5.5"
-   model_provider = "oca"
-   review_model = "oca/gpt-5.3-codex"
-   personality = "pragmatic"
-   model_reasoning_effort = "medium"
-   ```
-
-9. Save the file, restart Codex if needed, and verify that it opens successfully and responds to a prompt.
-
-   ![Codex home screen after setup on Windows](./images/codex-home-screen.png)
+   ![Codex account menu showing the signed-in email address and organization](../mac-setup/images/codex-account-organization-verified.png)
 
 ---
 
