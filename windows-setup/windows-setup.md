@@ -230,7 +230,7 @@ This sign-in is useful for source control workflows and for tools that integrate
 
 ---
 
-## Task 7: Install Cline, Configure Oracle Code Assist and SQLcl MCP
+## Task 7: Install Cline, Configure ChatGPT Subscription, and SQLcl MCP
 
 1. Click **Extensions** in the left-hand panel, search for **Cline**, and then click **Install**.
 
@@ -244,29 +244,35 @@ This sign-in is useful for source control workflows and for tools that integrate
 
    ![Opening the Cline panel from the VS Code Activity Bar](../mac-setup/images/open-cline-panel.png)
 
-4. In the Cline panel, click **Settings**, choose **Oracle Code Assist** as API Provider, check **I'm an Oracle Employee**, and then click **Sign in with Oracle Code Assist**.
+4. In the Cline panel, click **Settings** and choose **ChatGPT Subscription** as the API provider.
 
-5. After sign-in completes, click the model selector and choose the LLM model that you want to use.
+   ![Cline settings showing ChatGPT Subscription selected as the API provider](../mac-setup/images/cline-select-chatgpt-subscription-provider.png)
 
-   ![Selecting the LLM model after Oracle Code Assist sign-in](./images/choose-llm-model.png)
+5. Click **Sign in to OpenAI Codex** and complete the browser-based sign-in flow using your Oracle email address.
 
-6. Press **Ctrl+Shift+P** in VS Code to open the Command Palette.
+   ![Cline settings showing the Sign in to OpenAI Codex button](../mac-setup/images/cline-sign-in-openai-codex.png)
+
+6. Confirm that Cline is connected and using the OpenAI Codex model.
+
+   ![Cline panel showing a completed task with the OpenAI Codex model selected](../mac-setup/images/cline-openai-codex-session-verified.png)
+
+7. Press **Ctrl+Shift+P** in VS Code to open the Command Palette.
 
    ![Opening the Command Palette and searching for Configure Cline SQLcl MCP](./images/cline-command-palette-configure-sqlcl-mcp.png)
 
-7. Search for **Configure Cline SQLcl MCP** and open it.
+8. Search for **Configure Cline SQLcl MCP** and open it.
 
-8. In the Cline panel, open the MCP configuration area.
+9. In the Cline panel, open the MCP configuration area.
 
    ![Opening the Cline MCP configuration area](./images/cline-mcp-configuration.png)
 
-9. Review or enable the SQLcl - SQL Developer MCP configuration so that Cline can work with the SQL Developer extension.
+10. Review or enable the SQLcl - SQL Developer MCP configuration so that Cline can work with the SQL Developer extension.
 
    ![Cline MCP settings showing the SQLcl - SQL Developer configuration](./images/cline-sqlcl-mcp-settings.png)
 
-10. Save the configuration.
-11. Restart VS Code if required.
-12. Verify that Cline can see and use the SQL Developer tooling.
+11. Save the configuration.
+12. Restart VS Code if required.
+13. Verify that Cline can see and use the SQL Developer tooling.
 
 ---
 
