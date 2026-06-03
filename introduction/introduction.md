@@ -2,13 +2,13 @@
 
 ## About this Repository
 
-This workshop prepares your laptop for Cloud Vibe Code development and then helps you choose the persona-based lab path that best matches what you want to build. It covers the local tooling setup for macOS and Windows, Visual Studio Code configuration, Oracle Code Assist, Cline, SQL Developer, SQLcl MCP, Oracle client tooling, and the follow-on persona labs.
+This workshop prepares your laptop for Cloud Vibe Code development and then helps you choose the persona-based lab path that best matches what you want to build. It covers the local tooling setup for macOS and Windows, Visual Studio Code configuration, Cline, SQL Developer, SQLcl MCP, Oracle client tooling, and the follow-on persona labs.
 
 Use this workshop to:
 
 - Prepare a macOS or Windows machine for the labs.
 - Configure Visual Studio Code with Oracle developer tooling.
-- Install and validate Cline with Oracle Code Assist.
+- Install and validate Cline.
 - Configure SQLcl MCP for database-assisted AI workflows.
 - Choose a persona lab for SQLcl MCP, AI agents, Oracle APEX, or Mongo-style application development.
 
@@ -20,8 +20,8 @@ Use this workshop to:
 
 Complete the setup path for your operating system first, then choose a persona lab.
 
-- [**macOS setup**](?lab=mac-setup) - Install Git, Podman, Visual Studio Code, SQL Developer, Oracle Code Assist, Cline, SQLcl MCP, Oracle Instant Client, OCI CLI, and optional language runtimes.
-- [**Windows setup**](?lab=windows-setup) - Install Git, Podman, Visual Studio Code, SQL Developer, Oracle Code Assist, Cline, SQLcl MCP, Oracle Instant Client, OCI CLI, and optional language runtimes.
+- [**macOS setup**](?lab=mac-setup) - Install Git, Podman, Visual Studio Code, SQL Developer, Cline, SQLcl MCP, Oracle Instant Client, OCI CLI, and optional language runtimes.
+- [**Windows setup**](?lab=windows-setup) - Install Git, Podman, Visual Studio Code, SQL Developer, Cline, SQLcl MCP, Oracle Instant Client, OCI CLI, and optional language runtimes.
 - [**Persona-Based Lab Selection**](?lab=persona-selection) - Pick the lab path that matches your role, goal, or customer scenario.
 - [**Need Help?**](?lab=need-help) - Use the workshop Slack channel if you get stuck.
 
@@ -45,7 +45,6 @@ Before you begin, make sure you have:
 - A macOS or Windows machine with local administrator access.
 - A GitHub account.
 - An Oracle account with access to the workshop resources.
-- Access to Oracle Code Assist.
 - Familiarity with basic command-line usage.
 
 ## Acknowledgements

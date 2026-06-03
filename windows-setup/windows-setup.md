@@ -18,10 +18,8 @@ In this step, you will:
 - Configure the SQL Developer extension in VS Code
 - Configure MCP in Cline for the SQL Developer extension
 - Sign in to GitHub from VS Code
-- Install and configure Oracle Code Assist
 - Install and configure Cline
 - Install Oracle Instant Client
-- Request Oracle Code Assist access in OIM
 - Install the OCI CLI
 - Optionally install Python and Node.js
 - Optionally install Codex
@@ -213,24 +211,7 @@ This sign-in is useful for source control workflows and for tools that integrate
 
 ---
 
-## Task 6: Request Oracle Code Assist Access in OIM
-
-1. Sign in to [Oracle Identity Manager (OIM)](https://oim.oraclecorp.com/identity/faces/home). _VPN is required to open this link._
-2. Open **My Access** and check whether Oracle Code Assist access is already assigned to you.
-   ![Oracle Identity Manager My Access entitlements page showing Oracle Code Assist access already assigned](./images/oim-my-access-entitlements.png)
-3. If you do not already have access, click **Request Access**, and then click **Request for Self**.
-   ![Oracle Identity Manager request access page with the Request for Self option](./images/oim-request-access-request-for-self.png)
-4. Open **Catalog** and do a partial search for **oracle code assist**.
-   ![Oracle Identity Manager catalog search results showing Oracle Code Assist access items](./images/oim-catalog-search-results-oracle-code-assist.png)
-5. In the search results, click **Add to Cart** for the highlighted Oracle Code Assist access items: **API Key Access**, **Meta Models Access**, **OpenAI Models Access**, and **OpenAI GPT 4.1 Access**.
-6. Click **Next**.
-7. Enter your justification, click **Update**, and then click **Submit**.
-8. Wait for manager approval.
-9. After approval, allow about 15 minutes for the entitlement to become active.
-
----
-
-## Task 7: Install Cline, Configure ChatGPT Subscription, and SQLcl MCP
+## Task 6: Install Cline, Configure ChatGPT Subscription, and SQLcl MCP
 
 1. Click **Extensions** in the left-hand panel, search for **Cline**, and then click **Install**.
 
@@ -276,7 +257,7 @@ This sign-in is useful for source control workflows and for tools that integrate
 
 ---
 
-## Task 8: Install Oracle Instant Client
+## Task 7: Install Oracle Instant Client
 
 Oracle Instant Client is required for tools and extensions that depend on Oracle client libraries.
 
@@ -317,7 +298,7 @@ Oracle Instant Client is required for tools and extensions that depend on Oracle
 
 ---
 
-## Task 9: Install OCI CLI
+## Task 8: Install OCI CLI
 
 1. Open this [link](https://docs.oracle.com/en-us/iaas/Content/API/SDKDocs/cliinstall.htm#InstallingCLI__windows) for the Windows setup instructions for OCI CLI.
 
@@ -357,7 +338,7 @@ Oracle Instant Client is required for tools and extensions that depend on Oracle
 
 ---
 
-## Task 10: Optional - Install Core Programming Languages
+## Task 9: Optional - Install Core Programming Languages
 
 Install these if they are not already available on your machine.
 
@@ -416,7 +397,7 @@ Install these if they are not already available on your machine.
 
 ---
 
-## Task 11: Optional - Install and Set Up Codex
+## Task 10: Optional - Install and Set Up Codex
 
 1. Open the [Codex download page](https://openai.com/codex/) in your browser and click the Windows download option if available.
 2. Open the downloaded installer and follow the setup wizard.
@@ -457,7 +438,6 @@ Before moving on, confirm that:
 - GitHub is connected in VS Code
 - SQL Developer extension is installed
 - Cline is installed and opens correctly
-- Oracle Code Assist is installed
 - Instant Client is available if required by your tooling
 - OCI CLI is installed and responds in a terminal
 - Optional Python and Node.js installations are available if needed

@@ -33,7 +33,7 @@ This path is for builders who want to move quickly with database tooling, SQL wo
 
 - Use this path if you want to understand the workflow first before building a full application
 - This is a good fit when you want a practical entry point into SQLcl and MCP concepts
-- Complete the SQLcl MCP setup in the local machine setup first: [**Task 8** on macOS](?lab=mac-setup#Task8:InstallClineConfigureOracleCodeAssistandSQLMCP) or [**Task 7** on Windows](?lab=windows-setup#Task7:InstallClineConfigureOracleCodeAssistandSQLclMCP). Cline should be configured so it can use the SQLcl MCP server for database interaction.
+- Complete the SQLcl MCP setup in the local machine setup first: [**Task 7** on macOS](?lab=mac-setup#Task7:InstallClineConfigureChatGPTSubscriptionandSQLMCP) or [**Task 6** on Windows](?lab=windows-setup#Task6:InstallClineConfigureChatGPTSubscriptionandSQLclMCP). Cline should be configured so it can use the SQLcl MCP server for database interaction.
 - Provision and have access to Autonomous Database before you start the lab.
 
 ---

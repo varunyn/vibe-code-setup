@@ -32,7 +32,7 @@ This path is for developers who want to understand how Mongo-style applications 
 ### Before You Start
 
 - Use this path if you are focused on Mongo-style application development and migration patterns
-- Complete the Cline setup in the local machine setup first: [**Task 8** on macOS](?lab=mac-setup#Task8:InstallClineConfigureOracleCodeAssistandSQLMCP) or [**Task 7** on Windows](?lab=windows-setup#Task7:InstallClineConfigureOracleCodeAssistandSQLclMCP). Cline should be installed, signed in, configured with Oracle Code Assist, and able to use the SQLcl MCP tooling.
+- Complete the Cline setup in the local machine setup first: [**Task 7** on macOS](?lab=mac-setup#Task7:InstallClineConfigureChatGPTSubscriptionandSQLMCP) or [**Task 6** on Windows](?lab=windows-setup#Task6:InstallClineConfigureChatGPTSubscriptionandSQLclMCP). Cline should be installed, signed in, and able to use the SQLcl MCP tooling.
 
 > **Note**: We recommend using the gpt-5.5 model with medium reasoning effort for this lab. 
 
