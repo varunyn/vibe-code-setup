@@ -34,6 +34,11 @@ This path is for developers who want to build AI agents that do more than answer
 - Use this path if you are most interested in agent architecture and memory design
 - This lab is a strong fit when you want to connect database capabilities to AI agent behavior
 
+> **Green Button Event Codes:** If you are using the HOL with pre-provisioned Green Button environments, use the event code that matches your session:
+>
+> - **Session 1:** `09287-TNFL-MSSU`
+> - **Session 2:** `09290-YKJE-NQTB`
+
 > **Note:** Complete the tasks below only if you are using your own database. If you are using the lab-provided database, continue to **Start Here**.
 
 - If you have configured OCI CLI in Step 10, Task 4, continue with the steps below to create and test the database credentials and Select AI profile
