@@ -16,12 +16,11 @@ In this step, you will:
 - Match a lab to the project outcome and technology area that best fits your interests
 - Open the workshop you want to complete next
 
-
 <div class="persona-grid">
   <div class="persona-card">
     <h4>LOB/Shadow IT Guy</h4>
-    <img src="../../persona-selection/images/Database%20Developer.png" alt="LOB/Shadow IT Guy" />
-    <p>Choose this lab if you want to understand how SQLcl and MCP work together so AI tools can interact with database workflows more effectively.</p>
+     <img src="../../persona-selection/images/Apex%20Builder.png" alt="LOB/Shadow IT Guy" />
+    <p>Choose this lab if you want to create a user-facing Oracle APEX application that uses generative AI to power a practical question-and-answer experience.</p>
     <a href="?lab=lob-shadow-it-guy">Get started</a>
   </div>
 
@@ -34,8 +33,8 @@ In this step, you will:
 
   <div class="persona-card">
     <h4>DBA Vibe Coder</h4>
-    <img src="../../persona-selection/images/Apex%20Builder.png" alt="DBA Vibe Coder" />
-    <p>Choose this lab if you want to create a user-facing Oracle APEX application that uses generative AI to power a practical question-and-answer experience.</p>
+   <img src="../../persona-selection/images/Database%20Developer.png" alt="DBA Vibe Coder" />
+    <p>Choose this lab if you want to understand how SQLcl and MCP work together so AI tools can interact with database workflows more effectively.</p>
     <a href="?lab=dba-vibe-coder">Get started</a>
   </div>
 
