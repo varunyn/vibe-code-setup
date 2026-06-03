@@ -271,11 +271,11 @@ join user_cloud_ai_profile_attributes b
 
 Use the Oracle Machine Learning public access URL from the database tool configuration, then log in with the `AI4U` user created in Task 1.
 
-![Oracle Machine Learning public access URL in the database tool configuration](../../persona-selection/images/ai-agent-database-developer/oml-tool-configuration.png)
+<img src="../../persona-selection/images/ai-agent-database-developer/oml-tool-configuration.png" alt="Oracle Machine Learning public access URL in the database tool configuration" />
 
 On the Oracle Machine Learning login page, enter the database user and password created in Task 1.
 
-![Oracle Machine Learning login page using the AI4U database credentials](../../persona-selection/images/ai-agent-database-developer/oml-login-database-credentials.png)
+<img src="../../persona-selection/images/ai-agent-database-developer/oml-login-database-credentials.png" alt="Oracle Machine Learning login page using the AI4U database credentials" />
 
 After you log in, continue with the lab guide instructions.
 
