@@ -16,6 +16,11 @@ In this step, you will:
 - Match a lab to the project outcome and technology area that best fits your interests
 - Open the workshop you want to complete next
 
+> **Green Button Event Codes:** If you are using the HOL with pre-provisioned Green Button environments, use the event code that matches your session:
+>
+> - **Session 1:** `09287-TNFL-MSSU`
+> - **Session 2:** `09290-YKJE-NQTB`
+
 <div class="persona-grid">
   <div class="persona-card">
     <h4>LOB/Shadow IT Guy</h4>
